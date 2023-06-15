@@ -11,7 +11,98 @@ font-family: 'Questrial', sans-serif; (Para texto padrões)
 font-family: 'Wix Madefor Display', sans-serif; (Para títulos e textos)
 */
 
+/* Configurações Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
 
 /* Alterações Iguais */
+.container {
+    margin: auto;
+    max-width: 1200px;
+    height: 100%;
+}
+
+/* Parte do Header */
+
+header {
+    background-color: #FFFF;
+    height: 70px;
+}
+
+.header-elements {
+    display: flex;
+    height: 100%;
+}
+
+.header-elements-left {
+    align-items: center;
+    display: flex;
+    width: 300px;
+}
+
+.header-elements-left .logo-area {
+    background-color: black;
+    display: flex;
+    height: 60px;
+    margin-left: 50px;
+    width: 120px;
+}
+
+.header-elements-right {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.header-elements-right .header-elements-right-menu {
+    height: 100%;
+    margin-right: 50px;
+}
+
+.header-elements-right-menu nav ul {
+    background-color: #1a1a1a;
+    display: flex;
+    height: 70px;
+    list-style: none;
+}
+
+.header-elements-right-menu nav ul li a {
+    align-items: center;
+    color: #FFFF;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    height: 100%;
+    padding-inline: 40px;
+    text-decoration: none;
+}
+
+.header-elements-right-menu nav ul li a:hover {
+    background-color: #eec10c;
+}
 
 
+
+/* Banner - section */
+
+.section-banner {
+    background-image: url("../../img/banner-section.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 70px);
+}
+
+.template-banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
