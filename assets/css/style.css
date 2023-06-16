@@ -160,3 +160,103 @@ header {
 .section-banner-elements .button {
     margin-top: 50px;
 }
+
+
+/* Section - services */
+
+.section-services {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title-section {
+    color: #1a1a1a;
+    margin-top: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-shadow: none;
+}
+
+
+
+
+/*Section - individual para cada service */
+
+/* Left - */
+
+.section-service-elements {
+    display: flex;
+}
+
+.section-elements-left,
+.section-elements-right {
+    flex: 1;
+}
+
+.section-elements-left {
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.section-service-left h1 {
+    color: #1a1a1a;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+.section-service-image {
+    max-width: 450px;
+    background-color: #1a1a1a;
+    height: 200px;
+}
+
+.section-elements-right {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.section-elements-right .button {
+    margin-top: 40px;
+}
+
+/* Right */
+
+.section-service-elements {
+    display: flex;
+}
+
+.section-elements-left,
+.section-elements-right {
+    flex: 1;
+}
+
+.section-service-right .section-elements-right {
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.section-service-right h1 {
+    color: #1a1a1a;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+.section-service-right .section-service-image {
+    max-width: 450px;
+    background-color: #1a1a1a;
+    height: 200px;
+}
+
+.section-service-right .section-elements-left {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.section-service-right .section-elements-left .button {
+    margin-top: 40px;
+}
