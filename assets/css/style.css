@@ -22,8 +22,46 @@ font-family: 'Wix Madefor Display', sans-serif; (Para títulos e textos)
 /* Alterações Iguais */
 .container {
     margin: auto;
-    max-width: 1200px;
+    max-width: 1000px;
     height: 100%;
+}
+
+h1 {
+    color: #FFFF;
+    font-size: 50px;
+    line-height: 45px;
+    text-shadow: 1px 1px 1px #1a1a1a;
+}
+
+p1 {
+    color: #FFFF;
+    display: block;
+    font-size: 20px;
+}
+
+.bar-line1 {
+    background-color: #eec10c;
+    height: 5px;
+    width: 150px;
+}
+
+.bar-line2 {
+    background-color: #eec10c;
+    height: 5px;
+    width: 75px;
+}
+
+.button a {
+    background-color: #eec10c;
+    border-radius: 2px;
+    color: #1a1a1a;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.button a:hover {
+    background-color: rgba(238, 193, 12, 0.85);
 }
 
 /* Parte do Header */
@@ -41,14 +79,14 @@ header {
 .header-elements-left {
     align-items: center;
     display: flex;
-    width: 300px;
+    width: 120px;
 }
 
 .header-elements-left .logo-area {
     background-color: black;
     display: flex;
     height: 60px;
-    margin-left: 50px;
+    margin-left: 20px;
     width: 120px;
 }
 
@@ -61,7 +99,7 @@ header {
 
 .header-elements-right .header-elements-right-menu {
     height: 100%;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .header-elements-right-menu nav ul {
@@ -100,9 +138,25 @@ header {
 
 .template-banner {
     background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    top: 0;
     height: 100%;
+}
+
+.section-banner-elements {
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 150px;
+}
+
+.section-banner-elements p1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.section-banner-elements .button {
+    margin-top: 50px;
 }
