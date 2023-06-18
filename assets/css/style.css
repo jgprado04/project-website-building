@@ -164,16 +164,16 @@ header {
 
 /* Section - services */
 
-.section-services {
-    max-width: 1200px;
+.section-container {
     margin: auto;
+    max-width: 1200px;
 }
 
 .title-section {
     color: #1a1a1a;
+    display: flex;
     margin-top: 50px;
     font-size: 30px;
-    display: flex;
     justify-content: center;
     text-shadow: none;
 }
@@ -183,7 +183,7 @@ header {
 
 /*Section - individual para cada service */
 
-/* Left - */
+/* Left - Para imagens a esquerda */
 
 .section-service-elements {
     display: flex;
@@ -197,41 +197,33 @@ header {
 .section-elements-left {
     padding-left: 20px;
     padding-top: 50px;
+    margin-bottom: 80px;
 }
 
 .section-service-left h1 {
     color: #1a1a1a;
-    text-shadow: none;
     font-size: 20px;
+    text-shadow: none;
 }
 
 .section-service-image {
-    max-width: 450px;
     background-color: #1a1a1a;
     height: 200px;
+    max-width: 450px;
 }
 
 .section-elements-right {
-    padding-top: 100px;
     display: flex;
     flex-direction: column;
     padding-left: 50px;
+    padding-top: 100px;
 }
 
 .section-elements-right .button {
     margin-top: 40px;
 }
 
-/* Right */
-
-.section-service-elements {
-    display: flex;
-}
-
-.section-elements-left,
-.section-elements-right {
-    flex: 1;
-}
+/* Right - Para imagens a direita*/
 
 .section-service-right .section-elements-right {
     padding-left: 20px;
@@ -240,23 +232,136 @@ header {
 
 .section-service-right h1 {
     color: #1a1a1a;
-    text-shadow: none;
     font-size: 20px;
+    text-shadow: none;
 }
 
 .section-service-right .section-service-image {
-    max-width: 450px;
     background-color: #1a1a1a;
     height: 200px;
+    max-width: 450px;
 }
 
 .section-service-right .section-elements-left {
-    padding-top: 100px;
     display: flex;
     flex-direction: column;
     padding-right: 50px;
+    padding-top: 100px;
 }
 
 .section-service-right .section-elements-left .button {
     margin-top: 40px;
+}
+
+
+
+/*Section - about us */
+
+.section-about-us {
+    background-color: #1a1a1a;
+}
+
+.section-about-us-elements {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.section-about-us-left,
+.section-about-us-right {
+    flex: 1;
+}
+
+.section-about-us-left {
+    padding-left: 20px;
+}
+
+.section-about-us-left h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.section-about-us-left p1 {
+    font-size: 18px;
+}
+
+.section-about-us-right {
+    padding-right: 20px;
+}
+
+.section-about-us-right-image {
+    max-width: 600px;
+    height: 300px;
+    background-color: #1a1a1a;
+}
+
+
+
+/* Section - contact */
+
+.section-contact {
+    background-color: #eec10c;
+    border-bottom: 1px solid #FFFF;
+}
+
+.section-contact-elements {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.section-contact-elements .button {
+    margin-top: 80px;
+}
+
+.section-contact-elements .button a {
+    background-color: #1a1a1a;
+    color: #FFFF;
+}
+
+
+
+/* Section - Footer */
+
+footer {
+    background-color: #1a1a1a;
+}
+
+
+.section-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.section-footer-copyright,
+.section-footer-midia {
+    flex: 1;
+}
+
+.section-footer-copyright {
+    padding-left: 20px;
+}
+
+.section-footer-copyright p3 {
+    font-size: 15px;
+    color: #FFFF;
+}
+
+.section-footer-midia {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.midia-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFFF;
+    margin-left: 20px;
 }
