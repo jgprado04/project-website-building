@@ -262,9 +262,9 @@ header {
 }
 
 .section-about-us-elements {
-    padding-top: 200px;
-    padding-bottom: 100px;
     display: flex;
+    padding-bottom: 100px;
+    padding-top: 200px;
 }
 
 .section-about-us-left,
@@ -290,9 +290,9 @@ header {
 }
 
 .section-about-us-right-image {
-    max-width: 600px;
-    height: 300px;
     background-color: #1a1a1a;
+    height: 300px;
+    max-width: 600px;
 }
 
 
@@ -305,11 +305,11 @@ header {
 }
 
 .section-contact-elements {
-    padding-top: 200px;
-    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
     padding-left: 20px;
+    padding-top: 200px;
 }
 
 .section-contact-elements .button {
@@ -331,11 +331,11 @@ footer {
 
 
 .section-footer {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
     padding-top: 50px;
     padding-bottom: 50px;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
 }
 
 .section-footer-copyright,
@@ -348,8 +348,8 @@ footer {
 }
 
 .section-footer-copyright p3 {
-    font-size: 15px;
     color: #FFFF;
+    font-size: 15px;
 }
 
 .section-footer-midia {
@@ -359,9 +359,9 @@ footer {
 }
 
 .midia-logo {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
     background-color: #FFFF;
+    border-radius: 50%;
+    height: 30px;
     margin-left: 20px;
+    width: 30px;
 }
