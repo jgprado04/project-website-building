@@ -365,3 +365,17 @@ footer {
     margin-left: 20px;
     width: 30px;
 }
+
+
+.header-elements-right-open-menu {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+.open-menu {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
