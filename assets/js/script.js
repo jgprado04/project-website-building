@@ -1,6 +1,6 @@
 function doMenu() {
     let menuArea = document.querySelector(".area-menu")
-    if(menuArea.style.display == "none")  {
+    if (menuArea.style.display == "none") {
         menuArea.style.display = "flex";
     } else {
         menuArea.style.display = "none";

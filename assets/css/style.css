@@ -67,7 +67,7 @@ p1 {
 /* Parte do Header */
 
 header {
-    background-color: #FFFF;
+    background-color: #eec10c;
     height: 70px;
 }
 
@@ -79,52 +79,46 @@ header {
 .header-elements-left {
     align-items: center;
     display: flex;
-    width: 120px;
+    width: 250px;
 }
 
 .header-elements-left .logo-area {
-    background-color: black;
-    display: flex;
-    height: 60px;
-    margin-left: 20px;
-    width: 120px;
+    width: 250px;
 }
 
 .header-elements-right {
     flex: 1;
-    display: flex;
     height: 100%;
-    justify-content: flex-end;
 }
 
-.header-elements-right .header-elements-right-menu {
+.header-elements-right .header-elements-right-menu,
+.header-elements-right .header-elements-right-menu nav {
     height: 100%;
-    margin-right: 20px;
 }
 
-.header-elements-right-menu nav ul {
-    background-color: #1a1a1a;
-    display: flex;
-    height: 70px;
+
+
+.header-elements-right .header-elements-right-menu nav ul {
     list-style: none;
-}
-
-.header-elements-right-menu nav ul li a {
-    align-items: center;
-    color: #FFFF;
-    display: flex;
-    font-size: 16px;
-    font-weight: 600;
     height: 100%;
-    padding-inline: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.header-elements-right .header-elements-right-menu nav ul li a {
+    color: #1a1a1a;
     text-decoration: none;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
 }
 
-.header-elements-right-menu nav ul li a:hover {
-    background-color: #eec10c;
+.header-elements-right .header-elements-right-menu nav ul li a:hover {
+    color: #FFFF;
 }
-
-
 
 /* Banner - section */
 
@@ -338,30 +332,25 @@ footer {
 
 
 
+/* Menu to open */
 
-
-
-
-
-
-
-
-
-.header-elements-right-open-menu {
+.header-element-open-menu {
     display: none;
     justify-content: flex-end;
     align-items: center;
-    flex: 1;
+    height: 100%;
 }
 
 .open-menu {
     width: 30px;
     height: 30px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .area-menu {
     height: 200px;
+    background-color: #eec10c;
 }
 
 .area-menu nav {
@@ -369,7 +358,6 @@ footer {
 }
 
 .area-menu ul {
-    padding-top: 20px;
     height: 100%;
     list-style: none;
 }
@@ -388,13 +376,17 @@ footer {
     font-size: 16px;
 }
 
+.area-menu ul li a:hover {
+    color: #FFFF;
+}
 
-
-@media (min-width: 0px) and (max-width: 600px) {
-    .header-elements-right {
+/* Smartphone - Large */
+@media (min-width: 478px) and (max-width: 685px) {
+    .header-elements-right .header-elements-right-menu {
         display: none;
     }
-    .header-elements-right-open-menu {
+
+    .header-element-open-menu {
         display: flex;
     }
 
@@ -402,10 +394,12 @@ footer {
         flex-direction: column;
         padding-bottom: 20px;
     }
+
     .section-elements-left {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .section-elements-right {
         padding-left: 20px;
         padding-right: 20px;
@@ -414,5 +408,58 @@ footer {
 
     .section-contact-elements .button a {
         font-size: 16px;
+    }
+
+    .title-section {
+        font-size: 20px;
+    }
+
+    .section-about-us-left p1 {
+        font-size: 18px;
+        width: 300px;
+    }
+}
+
+/*Smartphone Medium and Small */
+@media (min-width: 0px) and (max-width: 477px) {
+    .header-elements-right .header-elements-right-menu {
+        display: none;
+    }
+
+    .header-element-open-menu {
+        display: flex;
+    }
+
+    .section-banner-elements .button {
+        margin-top: 20px;
+    }
+
+    .section-service-elements {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .section-elements-left {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-elements-right {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0;
+    }
+
+    .section-contact-elements .button a {
+        font-size: 16px;
+    }
+
+    .title-section {
+        font-size: 15px;
+    }
+
+    .section-about-us-left p1 {
+        font-size: 15px;
+        width: 250px;
     }
 }
