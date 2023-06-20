@@ -91,8 +91,8 @@ header {
 }
 
 .header-elements-right {
-    display: flex;
     flex: 1;
+    display: flex;
     height: 100%;
     justify-content: flex-end;
 }
@@ -223,36 +223,6 @@ header {
     margin-top: 40px;
 }
 
-/* Right - Para imagens a direita*/
-
-.section-service-right .section-elements-right {
-    padding-left: 20px;
-    padding-top: 50px;
-}
-
-.section-service-right h1 {
-    color: #1a1a1a;
-    font-size: 20px;
-    text-shadow: none;
-}
-
-.section-service-right .section-service-image {
-    background-color: #1a1a1a;
-    height: 200px;
-    max-width: 450px;
-}
-
-.section-service-right .section-elements-left {
-    display: flex;
-    flex-direction: column;
-    padding-right: 50px;
-    padding-top: 100px;
-}
-
-.section-service-right .section-elements-left .button {
-    margin-top: 40px;
-}
-
 
 
 /*Section - about us */
@@ -307,7 +277,7 @@ header {
 .section-contact-elements {
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     padding-left: 20px;
     padding-top: 200px;
 }
@@ -385,44 +355,64 @@ footer {
 }
 
 .open-menu {
-    display: none;
     width: 30px;
     height: 30px;
     margin-right: 20px;
 }
 
-.area-open-menu {
-    display: flex;
-    position: absolute;
-    z-index: 99;
-    height: calc(100vh - 70px);
-    right: 0;
-    top: 70px;
-    background: #1e1e1e;
-    width: 30vw;
+.area-menu {
+    height: 200px;
 }
 
-.area-open-menu nav {
-    width: 100%;
+.area-menu nav {
+    width: 100vw;
 }
 
-.area-open-menu nav ul {
+.area-menu ul {
+    padding-top: 20px;
+    height: 100%;
     list-style: none;
-    width: 100%;
-    margin-left: 10px;
 }
 
-.area-open-menu nav ul li {
-    font-size: 20px;
-    margin-top: 30px;
+.area-menu ul li {
     width: 100%;
 }
 
-.area-open-menu nav ul li a {
+.area-menu ul li a {
+    margin-top: 20px;
+    display: block;
     text-decoration: none;
-    color: #FFFF;
+    margin-left: 20px;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 16px;
 }
 
-.area-open-menu nav ul li a:hover {
-    border-top: 1px solid #eec10c;
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .header-elements-right {
+        display: none;
+    }
+    .header-elements-right-open-menu {
+        display: flex;
+    }
+
+    .section-service-elements {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .section-elements-left {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-elements-right {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0;
+    }
+
+    .section-contact-elements .button a {
+        font-size: 16px;
+    }
 }
