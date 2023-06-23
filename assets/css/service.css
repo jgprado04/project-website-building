@@ -120,6 +120,34 @@ header {
     color: #FFFF;
 }
 
+.about-our {
+    color: #1a1a1a;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.about-our:hover {
+    color: #FFFF;
+}
+
+.contact {
+    color: #1a1a1a;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.contact:hover {
+    color: #FFFF;
+}
+
+
+
 /* Section Services */
 
 .section-services {
@@ -176,17 +204,17 @@ header {
 .section-service-left,
 .section-service-center,
 .section-service-right {
-    flex: 1;
-    display: flex;
     align-items: center;
+    display: flex;
+    flex: 1;
     flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .img {
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .section-service-left {
@@ -201,6 +229,7 @@ header {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 
 
 /* Section - contact */
@@ -342,6 +371,10 @@ footer {
         margin-bottom: 400px;
     }
 
+    .section-contact-elements .button a {
+        font-size: 16px;
+    }
+
 }
 
 
@@ -363,5 +396,9 @@ footer {
     .section-service-center {
         margin-top: 400px;
         margin-bottom: 400px;
+    }
+
+    .section-contact-elements .button a {
+        font-size: 16px;
     }
 }

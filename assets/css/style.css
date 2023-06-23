@@ -12,6 +12,9 @@ font-family: 'Wix Madefor Display', sans-serif; (Para títulos e textos)
 */
 
 /* Configurações Padrão */
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -99,26 +102,55 @@ header {
 
 
 .header-elements-right .header-elements-right-menu nav ul {
-    list-style: none;
-    height: 100%;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 100%;
     justify-content: flex-end;
-    width: 100%;
+    list-style: none;
     padding-right: 20px;
+    width: 100%;
 }
 
 .header-elements-right .header-elements-right-menu nav ul li a {
     color: #1a1a1a;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.header-elements-right .header-elements-right-menu nav ul li a:hover {
+    color: #FFFF;
+}
+
+.about-our {
+    color: #1a1a1a;
+    cursor: pointer;
     text-decoration: none;
     margin-left: 30px;
     font-size: 20px;
     font-family: 'Questrial', sans-serif;
 }
 
-.header-elements-right .header-elements-right-menu nav ul li a:hover {
+.about-our:hover {
     color: #FFFF;
 }
+
+.contact {
+    color: #1a1a1a;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.contact:hover {
+    color: #FFFF;
+}
+
+
+
 
 /* Banner - section */
 
@@ -194,7 +226,18 @@ header {
     margin-bottom: 80px;
 }
 
-.section-service-left h1 {
+.img-section {
+    width: 100%;
+    height: auto;
+}
+
+.section-elements-left h1 {
+    color: #1a1a1a;
+    font-size: 30px;
+    text-shadow: none;
+}
+
+.section-elements-right h1 {
     color: #1a1a1a;
     font-size: 20px;
     text-shadow: none;
@@ -335,22 +378,22 @@ footer {
 /* Menu to open */
 
 .header-element-open-menu {
-    display: none;
-    justify-content: flex-end;
     align-items: center;
+    display: none;
     height: 100%;
+    justify-content: flex-end;
 }
 
 .open-menu {
-    width: 30px;
+    cursor: pointer;
     height: 30px;
     margin-right: 20px;
-    cursor: pointer;
+    width: 30px;
 }
 
 .area-menu {
-    height: 200px;
     background-color: #eec10c;
+    height: 200px;
 }
 
 .area-menu nav {
@@ -367,21 +410,28 @@ footer {
 }
 
 .area-menu ul li a {
-    margin-top: 20px;
-    display: block;
-    text-decoration: none;
-    margin-left: 20px;
     color: #1a1a1a;
+    display: block;
     font-weight: 600;
     font-size: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 .area-menu ul li a:hover {
     color: #FFFF;
 }
 
+
+
 /* Smartphone - Large */
 @media (min-width: 478px) and (max-width: 685px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
     .header-elements-right .header-elements-right-menu {
         display: none;
     }
@@ -395,6 +445,10 @@ footer {
         padding-bottom: 20px;
     }
 
+    .section-contact-elements .button a {
+        font-size: 16px;
+    }
+
     .section-elements-left {
         padding-left: 20px;
         padding-right: 20px;
@@ -404,24 +458,24 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 0;
-    }
-
-    .section-contact-elements .button a {
-        font-size: 16px;
-    }
-
-    .title-section {
-        font-size: 20px;
     }
 
     .section-about-us-left p1 {
         font-size: 18px;
         width: 300px;
     }
+
 }
+
+
 
 /*Smartphone Medium and Small */
 @media (min-width: 0px) and (max-width: 477px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
     .header-elements-right .header-elements-right-menu {
         display: none;
     }
@@ -430,13 +484,18 @@ footer {
         display: flex;
     }
 
+    .section-service-elements {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+
     .section-banner-elements .button {
         margin-top: 20px;
     }
 
-    .section-service-elements {
-        flex-direction: column;
-        padding-bottom: 20px;
+    .section-contact-elements .button a {
+        font-size: 16px;
     }
 
     .section-elements-left {
@@ -450,16 +509,9 @@ footer {
         padding-top: 0;
     }
 
-    .section-contact-elements .button a {
-        font-size: 16px;
-    }
-
-    .title-section {
-        font-size: 15px;
-    }
-
     .section-about-us-left p1 {
         font-size: 15px;
         width: 250px;
     }
+
 }
