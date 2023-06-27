@@ -7,12 +7,12 @@ function doMenu() {
     }
 }
 
-document.querySelector(".open-menu").addEventListener("click", doMenu);
+document.querySelector("#open-menu").addEventListener("click", doMenu);
 
 function doAbout() {
     window.scrollTo(
         {
-            top: 2600,
+            top: 3500,
             left: 0,
             behavior: 'smooth'
         }
@@ -21,14 +21,14 @@ function doAbout() {
 
 document.querySelector(".about-our").addEventListener("click", doAbout);
 
-function doContact() {
+function doAbmenu() {
     window.scrollTo(
         {
-            top: 3100,
+            top: 4580,
             left: 0,
             behavior: 'smooth'
         }
     )
 }
 
-document.querySelector(".contact").addEventListener("click", doContact);
+document.querySelector(".about-our-menu").addEventListener("click", doAbmenu);

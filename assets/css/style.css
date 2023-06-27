@@ -85,7 +85,7 @@ header {
     width: 250px;
 }
 
-.header-elements-left .logo-area {
+.header-elements-left #logo-area {
     width: 250px;
 }
 
@@ -123,7 +123,7 @@ header {
     color: #FFFF;
 }
 
-.about-our {
+#contact {
     color: #1a1a1a;
     cursor: pointer;
     text-decoration: none;
@@ -132,23 +132,9 @@ header {
     font-family: 'Questrial', sans-serif;
 }
 
-.about-our:hover {
+#contact:hover {
     color: #FFFF;
 }
-
-.contact {
-    color: #1a1a1a;
-    cursor: pointer;
-    text-decoration: none;
-    margin-left: 30px;
-    font-size: 20px;
-    font-family: 'Questrial', sans-serif;
-}
-
-.contact:hover {
-    color: #FFFF;
-}
-
 
 
 
@@ -215,6 +201,10 @@ header {
     display: flex;
 }
 
+.section-service-left {
+    margin-bottom: 100px;
+}
+
 .section-elements-left,
 .section-elements-right {
     flex: 1;
@@ -223,7 +213,7 @@ header {
 .section-elements-left {
     padding-left: 20px;
     padding-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .img-section {
@@ -366,11 +356,11 @@ footer {
 }
 
 .midia-logo {
-    background-color: #FFFF;
-    border-radius: 50%;
     height: 30px;
     margin-left: 20px;
     width: 30px;
+    background-color: #FFFF;
+    border-radius: 50%;
 }
 
 
@@ -384,7 +374,7 @@ footer {
     justify-content: flex-end;
 }
 
-.open-menu {
+#open-menu {
     cursor: pointer;
     height: 30px;
     margin-right: 20px;
@@ -423,6 +413,20 @@ footer {
     color: #FFFF;
 }
 
+#contact-menu {
+    color: #1a1a1a;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+#contact-menu:hover {
+    color: #FFFF;
+}
 
 
 /* Smartphone - Large */
