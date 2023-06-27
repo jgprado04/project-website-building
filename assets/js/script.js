@@ -1,15 +1,16 @@
-function doMenu() {
+// Para abrir  o menu
+document.querySelector("#open-menu").addEventListener("click", () => {
     let menuArea = document.querySelector(".area-menu")
     if (menuArea.style.display == "none") {
         menuArea.style.display = "flex";
     } else {
         menuArea.style.display = "none";
     }
-}
+});
 
-document.querySelector("#open-menu").addEventListener("click", doMenu);
 
-function doAbout() {
+// Para descer o scroll a parte contato
+document.querySelector("#contact").addEventListener("click", () => {
     window.scrollTo(
         {
             top: 3500,
@@ -17,18 +18,16 @@ function doAbout() {
             behavior: 'smooth'
         }
     )
-}
+});
 
-document.querySelector(".about-our").addEventListener("click", doAbout);
 
-function doAbmenu() {
+// Para descer o scroll a parte contato (MENU)
+document.querySelector("#contact-menu").addEventListener("click", () => {
     window.scrollTo(
         {
-            top: 4580,
+            top: 5893,
             left: 0,
             behavior: 'smooth'
         }
     )
-}
-
-document.querySelector(".about-our-menu").addEventListener("click", doAbmenu);
+});
