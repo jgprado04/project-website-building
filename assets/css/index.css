@@ -3,18 +3,15 @@ Paletas de cores a serem usadas
 Amarelo #eec10c
 Branco #ffffff
 Cinca escuro #1e1e1e
-Cinza Médio #454545
-Cinza Claro #898989
 
 Fontes -
-font-family: 'Questrial', sans-serif; (Para texto padrões)
-font-family: 'Wix Madefor Display', sans-serif; (Para títulos e textos)
+font-family: 'Questrial', sans-serif; (Para texto customizados)
+font-family: 'Wix Madefor Display', sans-serif; (Para textos padrões)
 */
 
+
+
 /* Configurações Padrão */
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +19,15 @@ font-family: 'Wix Madefor Display', sans-serif; (Para títulos e textos)
     font-family: 'Wix Madefor Display', sans-serif;
 }
 
+
+
 /* Alterações Iguais */
+:root {
+    --cor-amarelo: #eec10c;
+    --cor-cinza: #1e1e1e;
+    --cor-branca: #ffffff;
+}
+
 .container {
     margin: auto;
     max-width: 1000px;
@@ -33,7 +38,7 @@ h1 {
     color: #FFFF;
     font-size: 50px;
     line-height: 45px;
-    text-shadow: 1px 1px 1px #1a1a1a;
+    text-shadow: 1px 1px 1px var(--cor-cinza);
 }
 
 p1 {
@@ -43,19 +48,19 @@ p1 {
 }
 
 .bar-line1 {
-    background-color: #eec10c;
+    background-color: var(--cor-amarelo);
     height: 5px;
     width: 150px;
 }
 
 .bar-line2 {
-    background-color: #eec10c;
+    background-color: var(--cor-amarelo);
     height: 5px;
     width: 75px;
 }
 
 .button a {
-    background-color: #eec10c;
+    background-color: var(--cor-amarelo);
     border-radius: 2px;
     color: #1a1a1a;
     font-size: 20px;
@@ -67,10 +72,12 @@ p1 {
     background-color: rgba(238, 193, 12, 0.85);
 }
 
+
+
 /* Parte do Header */
 
 header {
-    background-color: #eec10c;
+    background-color: var(--cor-amarelo);
     height: 70px;
 }
 
@@ -99,8 +106,6 @@ header {
     height: 100%;
 }
 
-
-
 .header-elements-right .header-elements-right-menu nav ul {
     align-items: center;
     display: flex;
@@ -112,7 +117,7 @@ header {
 }
 
 .header-elements-right .header-elements-right-menu nav ul li a {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     font-family: 'Questrial', sans-serif;
     font-size: 20px;
     margin-left: 30px;
@@ -124,7 +129,7 @@ header {
 }
 
 #contact {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     cursor: pointer;
     text-decoration: none;
     margin-left: 30px;
@@ -133,7 +138,7 @@ header {
 }
 
 #contact:hover {
-    color: #FFFF;
+    color: var(--cor-branca);
 }
 
 
@@ -174,6 +179,7 @@ header {
 }
 
 
+
 /* Section - services */
 
 .section-container {
@@ -182,7 +188,7 @@ header {
 }
 
 .title-section {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     display: flex;
     margin-top: 50px;
     font-size: 30px;
@@ -222,19 +228,19 @@ header {
 }
 
 .section-elements-left h1 {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     font-size: 30px;
     text-shadow: none;
 }
 
 .section-elements-right h1 {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     font-size: 20px;
     text-shadow: none;
 }
 
 .section-service-image {
-    background-color: #1a1a1a;
+    background-color: var(--cor-cinza);
     height: 200px;
     max-width: 450px;
 }
@@ -255,7 +261,7 @@ header {
 /*Section - about us */
 
 .section-about-us {
-    background-color: #1a1a1a;
+    background-color: var(--cor-cinza);
 }
 
 .section-about-us-elements {
@@ -287,7 +293,7 @@ header {
 }
 
 .section-about-us-right-image {
-    background-color: #1a1a1a;
+    background-color: var(--cor-cinza);
     height: 300px;
     max-width: 600px;
 }
@@ -297,8 +303,8 @@ header {
 /* Section - contact */
 
 .section-contact {
-    background-color: #eec10c;
-    border-bottom: 1px solid #FFFF;
+    background-color: var(--cor-amarelo);
+    border-bottom: 1px solid var(--cor-branca);
 }
 
 .section-contact-elements {
@@ -314,7 +320,7 @@ header {
 }
 
 .section-contact-elements .button a {
-    background-color: #1a1a1a;
+    background-color: var(--cor-cinza);
     color: #FFFF;
 }
 
@@ -323,7 +329,7 @@ header {
 /* Section - Footer */
 
 footer {
-    background-color: #1a1a1a;
+    background-color: var(--cor-cinza);
 }
 
 
@@ -345,7 +351,7 @@ footer {
 }
 
 .section-footer-copyright p3 {
-    color: #FFFF;
+    color: var(--cor-branca);
     font-size: 15px;
 }
 
@@ -359,11 +365,34 @@ footer {
     height: 30px;
     margin-left: 20px;
     width: 30px;
-    background-color: #FFFF;
-    border-radius: 50%;
+}
+
+.midia-logo a img {
+    height: 30px;
+    width: 30px;
 }
 
 
+
+/* Botão de scroll */
+.arrow-up-area {
+    display: none;
+}
+
+#arrow-up {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 0;
+    margin-top: 500px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: var(--cor-amarelo);
+    border-radius: 20px;
+}
+
+
+/* Partes responsivas */
 
 /* Menu to open */
 
@@ -382,8 +411,11 @@ footer {
 }
 
 .area-menu {
-    background-color: #eec10c;
-    height: 200px;
+    background-color: var(--cor-amarelo);
+    height: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all ease .5s;
 }
 
 .area-menu nav {
@@ -400,7 +432,7 @@ footer {
 }
 
 .area-menu ul li a {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     display: block;
     font-weight: 600;
     font-size: 16px;
@@ -410,11 +442,11 @@ footer {
 }
 
 .area-menu ul li a:hover {
-    color: #FFFF;
+    color: var(--cor-branca);
 }
 
 #contact-menu {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     cursor: pointer;
     display: block;
     font-weight: 600;
@@ -425,8 +457,9 @@ footer {
 }
 
 #contact-menu:hover {
-    color: #FFFF;
+    color: var(--cor-branca);
 }
+
 
 
 /* Smartphone - Large */
@@ -469,6 +502,9 @@ footer {
         width: 300px;
     }
 
+    body {
+        overflow-x: hidden;
+    }
 }
 
 
@@ -517,5 +553,4 @@ footer {
         font-size: 15px;
         width: 250px;
     }
-
 }

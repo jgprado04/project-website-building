@@ -3,12 +3,10 @@ Paletas de cores a serem usadas
 Amarelo #eec10c
 Branco #ffffff
 Cinca escuro #1e1e1e
-Cinza Médio #454545
-Cinza Claro #898989
 
 Fontes -
-font-family: 'Questrial', sans-serif; (Para texto padrões)
-font-family: 'Wix Madefor Display', sans-serif; (Para títulos e textos)
+font-family: 'Questrial', sans-serif; (Textos Customizados)
+font-family: 'Wix Madefor Display', sans-serif; (Textos padrões)
 */
 
 /* Configurações Padrão */
@@ -20,6 +18,12 @@ font-family: 'Wix Madefor Display', sans-serif; (Para títulos e textos)
 }
 
 /* Alterações Iguais */
+:root {
+    --cor-amarelo: #eec10c;
+    --cor-cinza: #1e1e1e;
+    --cor-branca: #ffffff;
+}
+
 .container {
     margin: auto;
     max-width: 1000px;
@@ -30,31 +34,31 @@ h1 {
     color: #FFFF;
     font-size: 50px;
     line-height: 45px;
-    text-shadow: 1px 1px 1px #1a1a1a;
+    text-shadow: 1px 1px 1px var(--cor-cinza);
 }
 
 p1 {
-    color: #FFFF;
+    color: var(--cor-branca);
     display: block;
     font-size: 20px;
 }
 
 .bar-line1 {
-    background-color: #eec10c;
+    background-color: var(--cor-amarelo);
     height: 5px;
     width: 150px;
 }
 
 .bar-line2 {
-    background-color: #eec10c;
+    background-color: var(--cor-amarelo);
     height: 5px;
     width: 75px;
 }
 
 .button a {
-    background-color: #eec10c;
+    background-color: var(--cor-amarelo);
     border-radius: 2px;
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     font-size: 20px;
     padding: 10px 20px;
     text-decoration: none;
@@ -67,7 +71,7 @@ p1 {
 /* Parte do Header */
 
 header {
-    background-color: #eec10c;
+    background-color: var(--cor-amarelo);
     height: 70px;
 }
 
@@ -109,7 +113,7 @@ header {
 }
 
 .header-elements-right .header-elements-right-menu nav ul li a {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     text-decoration: none;
     margin-left: 30px;
     font-size: 20px;
@@ -117,11 +121,11 @@ header {
 }
 
 .header-elements-right .header-elements-right-menu nav ul li a:hover {
-    color: #FFFF;
+    color: var(--cor-branca);
 }
 
 #contact {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     cursor: pointer;
     text-decoration: none;
     margin-left: 30px;
@@ -130,7 +134,44 @@ header {
 }
 
 #contact:hover {
-    color: #FFFF;
+    color: var(--cor-branca);
+}
+
+
+
+/* Banner - section */
+
+.section-banner {
+    background-image: url("../../img/banner-about-us.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 70px);
+}
+
+.template-banner {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.section-banner-elements {
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 150px;
+}
+
+.section-banner-elements p1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.section-banner-elements .button {
+    margin-top: 50px;
 }
 
 
@@ -150,33 +191,33 @@ header {
 }
 
 .light {
-    background-color: #FFFF;
+    background-color: var(--cor-branca);
 }
 
 .light h1 {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     font-size: 28px;
     text-shadow: none;
 }
 
 .light p1 {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     display: block;
     font-size: 20px;
 
 }
 
 .dark {
-    background-color: #1a1a1a;
+    background-color: var(--cor-cinza);
 }
 
 .dark h1 {
-    color: #FFFF;
+    color: var(--cor-branca);
     font-size: 28px;
 }
 
 .dark p1 {
-    color: #FFFF;
+    color: var(--cor-branca);
     display: block;
     font-size: 20px;
 
@@ -189,7 +230,6 @@ header {
 }
 
 .section-service-left,
-.section-service-center,
 .section-service-right {
     align-items: center;
     display: flex;
@@ -207,13 +247,7 @@ header {
     padding-right: 10px;
 }
 
-.section-service-center {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .section-service-left p1,
-.section-service-center p1,
 .section-service-right p1 {
     display: block;
     margin-top: 20px;
@@ -229,8 +263,8 @@ header {
 /* Section - contact */
 
 .section-contact {
-    background-color: #eec10c;
-    border-bottom: 1px solid #FFFF;
+    background-color: var(--cor-amarelo);
+    border-bottom: 1px solid var(--cor-branca);
 }
 
 .section-contact-elements {
@@ -246,8 +280,8 @@ header {
 }
 
 .section-contact-elements .button a {
-    background-color: #1a1a1a;
-    color: #FFFF;
+    background-color: var(--cor-cinza);
+    color: var(--cor-branca);
 }
 
 
@@ -255,7 +289,7 @@ header {
 /* Section - Footer */
 
 footer {
-    background-color: #1a1a1a;
+    background-color: var(--cor-cinza);
 }
 
 
@@ -277,7 +311,7 @@ footer {
 }
 
 .section-footer-copyright p3 {
-    color: #FFFF;
+    color: var(--cor-branca);
     font-size: 15px;
 }
 
@@ -288,13 +322,38 @@ footer {
 }
 
 .midia-logo {
-    background-color: #FFFF;
-    border-radius: 50%;
     height: 30px;
     margin-left: 20px;
     width: 30px;
 }
 
+.midia-logo a img {
+    height: 30px;
+    width: 30px;
+}
+
+
+
+/* Scroll de botão */
+.arrow-up-area {
+    display: none;
+}
+
+#arrow-up {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 0;
+    margin-top: 500px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #eec10c;
+    border-radius: 20px;
+}
+
+
+
+/* Parte responsiva */
 
 /* Menu to open */
 
@@ -313,8 +372,11 @@ footer {
 }
 
 .area-menu {
-    height: 200px;
-    background-color: #eec10c;
+    background-color: var(--cor-amarelo);
+    height: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all ease .5s;
 }
 
 .area-menu nav {
@@ -335,17 +397,17 @@ footer {
     display: block;
     text-decoration: none;
     margin-left: 20px;
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     font-weight: 600;
     font-size: 16px;
 }
 
 .area-menu ul li a:hover {
-    color: #FFFF;
+    color: var(--cor-branca);
 }
 
 #contact-menu {
-    color: #1a1a1a;
+    color: var(--cor-cinza);
     cursor: pointer;
     display: block;
     font-weight: 600;
@@ -356,7 +418,7 @@ footer {
 }
 
 #contact-menu:hover {
-    color: #FFFF;
+    color: var(--cor-branca);
 }
 
 
@@ -373,11 +435,6 @@ footer {
 
     .section-service {
         display: block;
-    }
-
-    .section-service-center {
-        margin-top: 100px;
-        margin-bottom: 100px;
     }
 
     .section-contact-elements .button a {
@@ -400,11 +457,6 @@ footer {
 
     .section-service {
         display: block;
-    }
-
-    .section-service-center {
-        margin-top: 100px;
-        margin-bottom: 100px;
     }
 
     .section-contact-elements .button a {
